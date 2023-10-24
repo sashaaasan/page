@@ -1,0 +1,723 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body .menu > div {
+  font-size: 10px;
+  margin: 10px;
+  padding: 9px;
+  background-color: rgba(122, 122, 122, 0.158);
+  border-radius: 50px;
+  min-width: 80px;
+  height: 30px;
+  text-align: center;
+}
+
+body .text .bars, body .text .basket, body .text .heart, body .text .user {
+  font-size: 20px;
+  position: absolute;
+  left: 1150px;
+  top: 33px;
+  width: 40px;
+  height: 40px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-top: 9px;
+  padding-left: 11px;
+  border-radius: 100%;
+}
+
+body .main .sofa9 .add, body .main .sofa8 .add, body .main .sofa7 .add, body .main .sofa6 .add, body .main .sofa5 .add, body .main .sofa4 .add, body .main .sofa3 .add, body .main .sofa2 .add, body .main .sofa1 .add {
+  display: inline-flex;
+  margin-top: 10px;
+}
+body .main .sofa9 .add .bluebasket, body .main .sofa8 .add .bluebasket, body .main .sofa7 .add .bluebasket, body .main .sofa6 .add .bluebasket, body .main .sofa5 .add .bluebasket, body .main .sofa4 .add .bluebasket, body .main .sofa3 .add .bluebasket, body .main .sofa2 .add .bluebasket, body .main .sofa1 .add .bluebasket {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-top: 9px;
+  padding-left: 9px;
+  color: aliceblue;
+  background-color: blue;
+}
+body .main .sofa9 .add .greyheart, body .main .sofa8 .add .greyheart, body .main .sofa7 .add .greyheart, body .main .sofa6 .add .greyheart, body .main .sofa5 .add .greyheart, body .main .sofa4 .add .greyheart, body .main .sofa3 .add .greyheart, body .main .sofa2 .add .greyheart, body .main .sofa1 .add .greyheart {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-top: 9px;
+  padding-left: 10px;
+}
+body .main .sofa9 .add .greyheart:hover, body .main .sofa8 .add .greyheart:hover, body .main .sofa7 .add .greyheart:hover, body .main .sofa6 .add .greyheart:hover, body .main .sofa5 .add .greyheart:hover, body .main .sofa4 .add .greyheart:hover, body .main .sofa3 .add .greyheart:hover, body .main .sofa2 .add .greyheart:hover, body .main .sofa1 .add .greyheart:hover {
+  background-color: rgba(122, 122, 122, 0.444);
+}
+
+body .main .sofa9 .option2 p, body .main .sofa8 .option2 p, body .main .sofa7 .option2 p, body .main .sofa6 .option2 p, body .main .sofa5 .option2 p, body .main .sofa4 .option2 p, body .main .sofa3 .option2 p, body .main .sofa2 .option2 p {
+  font-size: 12px;
+  margin: 20px 10px 20px 10px;
+}
+body .main .sofa9 .option2 div, body .main .sofa8 .option2 div, body .main .sofa7 .option2 div, body .main .sofa6 .option2 div, body .main .sofa5 .option2 div, body .main .sofa4 .option2 div, body .main .sofa3 .option2 div, body .main .sofa2 .option2 div {
+  display: inline-flex;
+}
+body .main .sofa9 .option2 div img, body .main .sofa8 .option2 div img, body .main .sofa7 .option2 div img, body .main .sofa6 .option2 div img, body .main .sofa5 .option2 div img, body .main .sofa4 .option2 div img, body .main .sofa3 .option2 div img, body .main .sofa2 .option2 div img {
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
+}
+body .main .sofa9 .option2 div .plus4, body .main .sofa8 .option2 div .plus4, body .main .sofa7 .option2 div .plus4, body .main .sofa6 .option2 div .plus4, body .main .sofa5 .option2 div .plus4, body .main .sofa4 .option2 div .plus4, body .main .sofa3 .option2 div .plus4, body .main .sofa2 .option2 div .plus4 {
+  text-decoration: underline;
+  font-size: 16px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-top: 8px;
+  margin-left: 8px;
+  padding-top: 7px;
+  padding-left: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+body {
+  font-size: 20px;
+  font-family: monospace;
+}
+body .horizontal-line {
+  width: 100%;
+  margin-left: 70px;
+  margin-right: 70px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1215686275);
+}
+body .horizontal-line1 {
+  width: 100%;
+  margin-left: 70px;
+  margin-right: 70px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1215686275);
+}
+body .text {
+  position: relative;
+}
+body .text .text1 {
+  margin: 20px 300px 200px 300px;
+  background-color: rgba(122, 122, 122, 0.158);
+  border-radius: 50px;
+  text-align: left;
+  padding: 30px;
+  font-size: 20px;
+  min-width: 700px;
+  height: 45px;
+  transition: 300ms;
+}
+body .text .text1:hover {
+  background-color: rgba(122, 122, 122, 0.444);
+}
+body .text > div {
+  font-size: 14px;
+  position: absolute;
+  left: 910px;
+  top: 41px;
+}
+body .text .search {
+  position: absolute;
+  left: 940px;
+  top: 41px;
+  border-left: 1px solid black;
+  padding-left: 15px;
+}
+body .text .user:hover {
+  background-color: rgba(122, 122, 122, 0.444);
+}
+body .text .heart {
+  left: 1200px;
+  padding-left: 10px;
+}
+body .text .heart:hover {
+  background-color: rgba(122, 122, 122, 0.444);
+}
+body .text .basket {
+  left: 1250px;
+  padding-left: 9px;
+}
+body .text .basket:hover {
+  background-color: rgba(122, 122, 122, 0.444);
+}
+body .text .bars {
+  left: 1300px;
+}
+body .text .bars:hover {
+  background-color: rgba(122, 122, 122, 0.444);
+}
+body .menu > div {
+  text-transform: capitalize;
+  display: inline-flex;
+  transition: 300ms;
+}
+body .menu > div > p {
+  padding-right: 10px;
+}
+body .menu > div:hover {
+  background-color: rgba(122, 122, 122, 0.444);
+}
+body .menu .div1 {
+  margin-left: 100px;
+}
+body .main {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .main .sofa1 {
+  margin: 50px;
+}
+body .main .sofa1 h2 {
+  margin-top: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+body .main .sofa1 img {
+  width: 300px;
+  height: 300px;
+}
+body .main .sofa1 > p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+body .main .sofa1 .p1 {
+  font-size: 20px;
+  position: relative;
+  top: 25px;
+  left: 7px;
+  background-color: red;
+  width: 70px;
+  height: 30px;
+}
+body .main .sofa1 .p2 {
+  padding-top: 5px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+  background-color: rgb(255, 213, 0);
+  width: 70px;
+  height: 30px;
+}
+body .main .sofa1 span {
+  font-size: 12px;
+}
+body .main .sofa1 .stars {
+  font-size: 14px;
+  margin-top: 10px;
+}
+body .main .sofa1 .available {
+  margin-top: 20px;
+}
+body .main .sofa1 .available ::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  display: inline-block;
+  margin-right: 10px;
+}
+body .main .sofa1 .option p {
+  font-size: 12px;
+  margin: 20px 10px 20px 10px;
+}
+body .main .sofa1 .option div {
+  display: inline-flex;
+}
+body .main .sofa1 .option div img {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+}
+body .main .sofa2 {
+  margin: 50px;
+}
+body .main .sofa2 img {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+body .main .sofa2 h1 {
+  font-size: 14px;
+  position: absolute;
+  top: 400px;
+  min-width: 90px;
+  min-height: 20px;
+  padding: 10px;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(237, 46, 90);
+}
+body .main .sofa2 h2 {
+  margin-top: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+body .main .sofa2 > p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+body .main .sofa2 span {
+  font-size: 12px;
+}
+body .main .sofa2 .price {
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 33px;
+}
+body .main .sofa2 .star {
+  font-size: 14px;
+  margin-top: 10px;
+}
+body .main .sofa2 .available1 {
+  margin-top: 20px;
+}
+body .main .sofa2 .available1 ::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid red;
+  display: inline-block;
+  margin-right: 10px;
+}
+body .main .sofa3 {
+  margin: 50px;
+}
+body .main .sofa3 img {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+body .main .sofa3 .pop1 {
+  color: red;
+  letter-spacing: 2px;
+  margin-top: 16px;
+  font-size: 14px;
+}
+body .main .sofa3 > p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+body .main .sofa3 h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+body .main .sofa3 span {
+  font-size: 12px;
+}
+body .main .sofa3 .price {
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 17px;
+}
+body .main .sofa3 .price p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.464);
+}
+body .main .sofa3 .star {
+  font-size: 14px;
+  margin-top: 10px;
+}
+body .main .sofa3 .available1 {
+  margin-top: 20px;
+}
+body .main .sofa3 .available1 ::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid red;
+  display: inline-block;
+  margin-right: 10px;
+}
+body .main .sofa4 {
+  margin: 50px;
+}
+body .main .sofa4 img {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+body .main .sofa4 .pop1 {
+  color: red;
+  letter-spacing: 2px;
+  margin-top: 16px;
+  font-size: 14px;
+}
+body .main .sofa4 > p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+body .main .sofa4 h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+body .main .sofa4 span {
+  font-size: 12px;
+}
+body .main .sofa4 .price {
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 33px;
+}
+body .main .sofa4 .star {
+  font-size: 14px;
+  margin-top: 10px;
+}
+body .main .sofa4 .available1 {
+  margin-top: 20px;
+}
+body .main .sofa4 .available1 ::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid red;
+  display: inline-block;
+  margin-right: 10px;
+}
+body .main .sofa5 {
+  margin: 50px;
+}
+body .main .sofa5 img {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+body .main .sofa5 .pop1 {
+  color: red;
+  letter-spacing: 2px;
+  margin-top: 16px;
+  font-size: 14px;
+}
+body .main .sofa5 > p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+body .main .sofa5 h2 {
+  margin-top: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+body .main .sofa5 span {
+  font-size: 12px;
+}
+body .main .sofa5 .price {
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 33px;
+}
+body .main .sofa5 .star {
+  font-size: 14px;
+  margin-top: 10px;
+}
+body .main .sofa5 .available {
+  margin-top: 20px;
+}
+body .main .sofa5 .available ::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  display: inline-block;
+  margin-right: 10px;
+}
+body .main .sofa6 {
+  margin: 50px;
+}
+body .main .sofa6 img {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+body .main .sofa6 .pop1 {
+  color: red;
+  letter-spacing: 2px;
+  margin-top: 16px;
+  font-size: 14px;
+}
+body .main .sofa6 > p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+body .main .sofa6 h2 {
+  margin-top: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+body .main .sofa6 span {
+  font-size: 12px;
+}
+body .main .sofa6 .price {
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 33px;
+}
+body .main .sofa6 .star {
+  font-size: 14px;
+  margin-top: 10px;
+}
+body .main .sofa6 .available1 {
+  margin-top: 20px;
+}
+body .main .sofa6 .available1 ::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid red;
+  display: inline-block;
+  margin-right: 10px;
+}
+body .main .sofa7 {
+  margin: 50px;
+}
+body .main .sofa7 img {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+body .main .sofa7 .pop1 {
+  color: red;
+  letter-spacing: 2px;
+  margin-top: 16px;
+  font-size: 14px;
+}
+body .main .sofa7 > p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+body .main .sofa7 h2 {
+  margin-top: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+body .main .sofa7 span {
+  font-size: 12px;
+}
+body .main .sofa7 .price {
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 33px;
+}
+body .main .sofa7 .star {
+  font-size: 14px;
+  margin-top: 10px;
+}
+body .main .sofa7 .available1 {
+  margin-top: 20px;
+}
+body .main .sofa7 .available1 ::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid red;
+  display: inline-block;
+  margin-right: 10px;
+}
+body .main .sofa8 {
+  margin: 50px;
+}
+body .main .sofa8 img {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+body .main .sofa8 .pop1 {
+  color: red;
+  letter-spacing: 2px;
+  margin-top: 16px;
+  font-size: 14px;
+}
+body .main .sofa8 > p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+body .main .sofa8 h2 {
+  margin-top: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+body .main .sofa8 span {
+  font-size: 12px;
+}
+body .main .sofa8 .price {
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 33px;
+}
+body .main .sofa8 .star {
+  font-size: 14px;
+  margin-top: 10px;
+}
+body .main .sofa8 .available {
+  margin-top: 20px;
+}
+body .main .sofa8 .available ::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  display: inline-block;
+  margin-right: 10px;
+}
+body .main .sofa9 {
+  margin: 50px;
+}
+body .main .sofa9 img {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+body .main .sofa9 .pop1 {
+  color: red;
+  letter-spacing: 2px;
+  margin-top: 16px;
+  font-size: 14px;
+}
+body .main .sofa9 h1 {
+  font-size: 14px;
+  position: absolute;
+  top: 400px;
+  min-width: 90px;
+  min-height: 30px;
+  padding: 10px;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(237, 46, 90);
+}
+body .main .sofa9 h2 {
+  margin-top: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+body .main .sofa9 > p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+body .main .sofa9 span {
+  font-size: 12px;
+}
+body .main .sofa9 .price {
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 17px;
+}
+body .main .sofa9 .price p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.464);
+}
+body .main .sofa9 .star {
+  font-size: 14px;
+  margin-top: 10px;
+}
+body .main .sofa9 .available1 {
+  margin-top: 20px;
+}
+body .main .sofa9 .available1 ::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid red;
+  display: inline-block;
+  margin-right: 10px;
+}/*# sourceMappingURL=position4.css.map */

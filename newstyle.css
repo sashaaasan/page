@@ -1,0 +1,108 @@
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    background-color: thistle;
+}
+.menu{
+    text-transform: uppercase;
+
+}
+h1{
+    color: black;
+    text-shadow: 1px 1px 10px rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+}
+.menu>p{
+    font-size: 20px;
+    text-align: center;
+    word-spacing: 50px;
+}
+a{
+    font-weight: 700;
+    color:teal;
+    text-decoration: none;
+    transition: 500ms;
+}
+a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px black ;
+}
+.inform{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px black;
+    background-image: url("https://64.media.tumblr.com/a454aa2f23921840acc34d17ae727b22/2b713ba857066db7-41/s1280x1920/a6a8cefc43189f0794d78abe64aad6313e173f89.pnj") ;
+    opacity: 0.89;
+    border-radius: 10px;
+}
+.inf{
+    text-align: center;
+}
+.img{
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
+    background-color: white;
+}
+
+.ph{
+   margin-left: 45px;
+
+}
+.right{
+    text-align: right;
+    margin-right: 70px;
+}
+
+.right2>span{
+    color: blue;
+}
+.right1{
+    font-weight: bold;
+    color: rgb(22, 161, 247);
+    font-style: italic;
+    text-transform: capitalize;
+}
+span{
+    color: orange;
+}
+.lol{
+    text-align: left;
+    margin-right: 45px;
+}
+.coc{
+    letter-spacing: 0.9px;
+}
+

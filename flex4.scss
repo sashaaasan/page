@@ -1,0 +1,100 @@
+@import 'nulstyle.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Noto+Serif:wght@200;400&family=Source+Code+Pro:wght@300;400&display=swap');
+
+body{
+    background-color: rgba(203, 203, 203, 0.602);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Source Code Pro', monospace;
+
+}
+.wrapper__title {
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    margin: 50px;
+    text-shadow:   2px 2px 4px rgba(0, 0, 0, 0.501);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.column {
+   
+
+}
+.column__row {
+    display: flex;
+    flex-wrap: wrap;
+    
+    .column__body {
+        min-width: 280px;
+        min-height: 400px;
+        padding: 40px 0;
+        background-color: #fff;
+        border-radius: 20px;
+        transition: 300ms;
+        margin: 30px;
+        &:hover{
+            box-shadow:  2px 2px 30px rgba(0, 0, 0, 0.316);
+            transform: scale(1.04);
+            
+        }
+    }
+    .column__item {
+    }
+}
+
+.item {
+    max-width: 200px;
+    margin: 0px auto;
+}
+
+.item__row {
+    display: flex;
+    flex-direction: column;
+    .item__image {
+        flex: 0 0 100px;
+        >img{
+            border-radius: 20px;
+        }
+    }
+    .item__title {
+        
+        padding: 10px 0px 0px 0px;
+        font-size: 20px;
+        line-height: 30px;
+        color: #ceb66e;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    .item__text {
+        font-size: 14px;
+        padding: 15px 0px;
+    }
+    .item__cost {
+        display:flex;
+        justify-content: space-between;
+        .cost__price{
+            margin: 10px 0;
+            font-size: 17px;
+            line-height: 24px;
+            color: #ceb66e;
+            >span{
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+        .cost__buy {
+            background-color: #ceb66e;
+            color: #fff;
+            width: 120px;
+            min-height: 20px;
+            text-align: center;
+            justify-content: center;
+            padding-top: 10px;
+            border-radius: 50px;
+        }
+    }
+}

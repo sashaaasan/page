@@ -1,0 +1,914 @@
+@import"nulstyle.scss";
+
+$tt: uppercase;
+
+%frame {
+    font-size: 10px;
+    margin: 10px;
+    padding: 9px;
+    background-color: rgba(122, 122, 122, 0.158);
+    border-radius: 50px;
+    min-width: 80px;
+    height: 30px;
+    text-align: center;
+}
+
+%menu {
+    font-size: 20px;
+    position: absolute;
+    left: 1150px;
+    top: 33px;
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 9px;
+    padding-left: 11px;
+    border-radius: 100%;
+}
+
+%shabo {
+    .add {
+        display: inline-flex;
+        margin-top: 10px;
+
+        .bluebasket {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-top: 9px;
+            padding-left: 9px;
+            color: aliceblue;
+            background-color: blue;
+        }
+
+        .greyheart {
+            margin-left: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-top: 9px;
+            padding-left: 10px;
+
+            &:hover {
+                background-color: rgba(122, 122, 122, 0.444);
+            }
+        }
+    }
+}
+
+%option {
+    .option2 {
+        p {
+            font-size: 12px;
+            margin: 20px 10px 20px 10px;
+        }
+
+        div {
+            display: inline-flex;
+
+            img {
+                margin-left: 5px;
+                width: 50px;
+                height: 50px;
+            }
+
+            .plus4 {
+                text-decoration: underline;
+                font-size: 16px;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                margin-top: 8px;
+                margin-left: 8px;
+                padding-top: 7px;
+                padding-left: 8px;
+                border: 1px solid rgba(0, 0, 0, 0.175);
+            }
+        }
+    }
+}
+
+%style1 {
+
+    margin: 50px;
+
+    img {
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+
+    .pop1 {
+        color: red;
+        letter-spacing: 2px;
+        margin-top: 16px;
+        font-size: 14px;
+    }
+
+    >p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+
+    h2 {
+        margin-top: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 20px;
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 33px;
+    }
+
+    .star {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    @extend %shabo;
+
+    .available {
+        margin-top: 20px;
+
+        ::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: green;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+    }
+
+    @extend %option;
+}
+
+body {
+
+    .horizontal-line {
+        width: 100%; 
+        margin-left: 70px;
+        margin-right: 70px;
+        height: 1px;
+        background-color: #0000001f;
+      }
+      .horizontal-line1 {
+        width: 100%; 
+
+        margin-left: 70px;
+        margin-right: 70px;
+        height: 1px;
+        background-color: #0000001f;
+      }
+    font-size: 20px;
+    font-family: monospace;
+
+    .text {
+        position: relative;
+
+        .text1 {
+            margin: 20px 300px 200px 300px;
+            background-color: rgba(122, 122, 122, 0.158);
+            border-radius: 50px;
+            text-align: left;
+            padding: 30px;
+            font-size: 20px;
+            min-width: 700px;
+            height: 45px;
+            transition: 300ms;
+
+            &:hover {
+                background-color: rgba(122, 122, 122, 0.444);
+            }
+        }
+
+        >div {
+            font-size: 14px;
+            position: absolute;
+            left: 910px;
+            top: 41px;
+        }
+
+        .search {
+            position: absolute;
+            left: 940px;
+            top: 41px;
+            border-left: 1px solid black;
+            padding-left: 15px;
+        }
+
+        .user {
+            @extend %menu;
+
+            &:hover {
+                background-color: rgba(122, 122, 122, 0.444);
+            }
+
+        }
+
+        .heart {
+            @extend %menu;
+            left: 1200px;
+            padding-left: 10px;
+
+            &:hover {
+                background-color: rgba(122, 122, 122, 0.444);
+            }
+        }
+
+        .basket {
+            @extend %menu;
+            left: 1250px;
+            padding-left: 9px;
+
+            &:hover {
+                background-color: rgba(122, 122, 122, 0.444);
+            }
+        }
+
+        .bars {
+            @extend %menu;
+            left: 1300px;
+
+            &:hover {
+                background-color: rgba(122, 122, 122, 0.444);
+            }
+        }
+    }
+
+    .menu {
+        >div {
+            @extend %frame;
+            text-transform: capitalize;
+            display: inline-flex;
+            transition: 300ms;
+
+            >p {
+                padding-right: 10px;
+            }
+
+            &:hover {
+                background-color: rgba(122, 122, 122, 0.444);
+            }
+        }
+
+        .div1 {
+            margin-left: 100px;
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+
+        .sofa1 {
+            margin: 50px;
+
+            h2 {
+                margin-top: 40px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            img {
+                width: 300px;
+                height: 300px;
+            }
+
+            >p {
+                margin-top: 5px;
+                font-size: 16px;
+            }
+
+            .p1 {
+                font-size: 20px;
+                position: relative;
+                top: 25px;
+                left: 7px;
+                background-color: red;
+                width: 70px;
+                height: 30px;
+            }
+
+            .p2 {
+                padding-top: 5px;
+                font-weight: 700;
+                position: relative;
+                z-index: 1;
+                font-size: 20px;
+                background-color: rgb(255, 213, 0);
+                width: 70px;
+                height: 30px;
+            }
+
+            span {
+                font-size: 12px;
+            }
+
+            .stars {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+
+            @extend %shabo;
+
+            .available {
+                margin-top: 20px;
+
+                ::before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: green;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+
+            }
+
+            .option {
+                p {
+                    font-size: 12px;
+                    margin: 20px 10px 20px 10px;
+                }
+
+                div {
+                    display: inline-flex;
+
+                    img {
+                        margin-left: 10px;
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+
+        }
+
+        .sofa2 {
+            margin: 50px;
+
+            img {
+                position: relative;
+                width: 300px;
+                height: 300px;
+            }
+
+            h1 {
+                font-size: 14px;
+                position: absolute;
+                top: 400px;
+                min-width: 90px;
+                min-height: 20px;
+                padding: 10px;
+                font-weight: 700;
+                color: white;
+                background-color: rgb(237, 46, 90);
+            }
+
+            h2 {
+                margin-top: 32px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            >p {
+                margin-top: 5px;
+                font-size: 16px;
+            }
+
+            span {
+                font-size: 12px;
+            }
+
+            .price {
+                font-size: 20px;
+                font-weight: 700;
+                font-size: 20px;
+                margin-top: 33px;
+            }
+
+            .star {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+
+            @extend %shabo;
+
+            .available1 {
+                margin-top: 20px;
+
+                ::before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    border: 2px solid red;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+
+            }
+
+            @extend %option;
+
+
+        }
+
+        .sofa3 {
+            margin: 50px;
+
+            img {
+                position: relative;
+                width: 300px;
+                height: 300px;
+            }
+
+            .pop1 {
+                color: red;
+                letter-spacing: 2px;
+                margin-top: 16px;
+                font-size: 14px;
+            }
+
+            >p {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+
+            h2 {
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            span {
+                font-size: 12px;
+            }
+
+            .price {
+                font-size: 20px;
+                font-weight: 700;
+                font-size: 20px;
+                margin-top: 17px;
+
+                p {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    font-weight: normal;
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.464);
+                }
+            }
+
+            .star {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+
+            @extend %shabo;
+
+            .available1 {
+                margin-top: 20px;
+
+                ::before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    border: 2px solid red;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+
+            }
+
+            @extend %option;
+        }
+
+
+
+        .sofa4 {
+            margin: 50px;
+
+            img {
+                position: relative;
+                width: 300px;
+                height: 300px;
+            }
+
+            .pop1 {
+                color: red;
+                letter-spacing: 2px;
+                margin-top: 16px;
+                font-size: 14px;
+            }
+
+            >p {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+
+            h2 {
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            span {
+                font-size: 12px;
+            }
+
+            .price {
+                font-size: 20px;
+                font-weight: 700;
+                font-size: 20px;
+                margin-top: 33px;
+            }
+
+            .star {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+
+            @extend %shabo;
+
+            .available1 {
+                margin-top: 20px;
+
+                ::before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    border: 2px solid red;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+
+            }
+
+            @extend %option;
+
+        }
+
+        .sofa5 {
+
+            margin: 50px;
+
+            img {
+                position: relative;
+                width: 300px;
+                height: 300px;
+            }
+
+            .pop1 {
+                color: red;
+                letter-spacing: 2px;
+                margin-top: 16px;
+                font-size: 14px;
+            }
+
+            >p {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+
+            h2 {
+                margin-top: 32px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            span {
+                font-size: 12px;
+            }
+
+            .price {
+                font-size: 20px;
+                font-weight: 700;
+                font-size: 20px;
+                margin-top: 33px;
+            }
+
+            .star {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+
+            @extend %shabo;
+
+            .available {
+                margin-top: 20px;
+
+                ::before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: green;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+
+            }
+
+            @extend %option;
+        }
+
+        .sofa6 {
+
+            margin: 50px;
+
+            img {
+                position: relative;
+                width: 300px;
+                height: 300px;
+            }
+
+            .pop1 {
+                color: red;
+                letter-spacing: 2px;
+                margin-top: 16px;
+                font-size: 14px;
+            }
+
+            >p {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+
+            h2 {
+                margin-top: 32px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            span {
+                font-size: 12px;
+            }
+
+            .price {
+                font-size: 20px;
+                font-weight: 700;
+                font-size: 20px;
+                margin-top: 33px;
+            }
+
+            .star {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+
+            @extend %shabo;
+
+            .available1 {
+                margin-top: 20px;
+
+                ::before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    border: 2px solid red;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+
+            }
+
+            @extend %option;
+        }
+
+        .sofa7 {
+
+            margin: 50px;
+
+            img {
+                position: relative;
+                width: 300px;
+                height: 300px;
+            }
+
+            .pop1 {
+                color: red;
+                letter-spacing: 2px;
+                margin-top: 16px;
+                font-size: 14px;
+            }
+
+            >p {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+
+            h2 {
+                margin-top: 32px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            span {
+                font-size: 12px;
+            }
+
+            .price {
+                font-size: 20px;
+                font-weight: 700;
+                font-size: 20px;
+                margin-top: 33px;
+            }
+
+            .star {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+
+            @extend %shabo;
+
+            .available1 {
+                margin-top: 20px;
+
+                ::before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    border: 2px solid red;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+
+            }
+
+            @extend %option;
+        }
+        .sofa8{
+
+            margin: 50px;
+
+            img {
+                position: relative;
+                width: 300px;
+                height: 300px;
+            }
+
+            .pop1 {
+                color: red;
+                letter-spacing: 2px;
+                margin-top: 16px;
+                font-size: 14px;
+            }
+
+            >p {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+
+            h2 {
+                margin-top: 32px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            span {
+                font-size: 12px;
+            }
+
+            .price {
+                font-size: 20px;
+                font-weight: 700;
+                font-size: 20px;
+                margin-top: 33px;
+            }
+
+            .star {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+
+            @extend %shabo;
+
+            .available {
+                margin-top: 20px;
+
+                ::before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: green;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+
+            }
+
+            @extend %option;
+        }
+        .sofa9{
+            margin: 50px;
+
+            img {
+                position: relative;
+                width: 300px;
+                height: 300px;
+            }
+
+            .pop1 {
+                color: red;
+                letter-spacing: 2px;
+                margin-top: 16px;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 14px;
+                position: absolute;
+                top: 400px;
+                min-width: 90px;
+                min-height: 30px;
+                padding: 10px;
+                font-weight: 700;
+                color: white;
+                background-color: rgb(237, 46, 90);
+            }
+
+            h2 {
+                margin-top: 5px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            >p {
+                margin-top: 5px;
+                font-size: 16px;
+            }
+
+            span {
+                font-size: 12px;
+            }
+
+            .price {
+                font-size: 20px;
+                font-weight: 700;
+                font-size: 20px;
+                margin-top: 17px;
+
+                p {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    font-weight: normal;
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.464);
+                }
+            }
+
+            .star {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+
+            @extend %shabo;
+
+            .available1 {
+                margin-top: 20px;
+
+                ::before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    border: 2px solid red;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+
+            }
+
+            @extend %option;
+        }
+
+
+    }
+}

@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Noto+Serif:wght@200;400&family=Source+Code+Pro:wght@300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  background-color: rgba(203, 203, 203, 0.602);
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Serif", serif;
+  font-family: "Source Code Pro", monospace;
+}
+
+.wrapper__title {
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+  margin: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.501);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.column__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column__row .column__body {
+  min-width: 280px;
+  min-height: 400px;
+  padding: 40px 0;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: 300ms;
+  margin: 30px;
+}
+.column__row .column__body:hover {
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.316);
+  transform: scale(1.04);
+}
+.item {
+  max-width: 200px;
+  margin: 0px auto;
+}
+
+.item__row {
+  display: flex;
+  flex-direction: column;
+}
+.item__row .item__image {
+  flex: 0 0 100px;
+}
+.item__row .item__image > img {
+  border-radius: 20px;
+}
+.item__row .item__title {
+  padding: 10px 0px 0px 0px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ceb66e;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.item__row .item__text {
+  font-size: 14px;
+  padding: 15px 0px;
+}
+.item__row .item__cost {
+  display: flex;
+  justify-content: space-between;
+}
+.item__row .item__cost .cost__price {
+  margin: 10px 0;
+  font-size: 17px;
+  line-height: 24px;
+  color: #ceb66e;
+}
+.item__row .item__cost .cost__price > span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.item__row .item__cost .cost__buy {
+  background-color: #ceb66e;
+  color: #fff;
+  width: 120px;
+  min-height: 20px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10px;
+  border-radius: 50px;
+}/*# sourceMappingURL=flex4.css.map */
